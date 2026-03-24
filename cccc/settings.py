@@ -29,7 +29,7 @@ LEVEL_NAMES = {1: "Poudanapura", 2: "Bharukaccha", 3: "Vidisha", 4: "Varanasi", 
 
 # Player
 PLAYER_SPEED = 250
-PLAYER_MAX_HEALTH = 100
+PLAYER_MAX_HEALTH = 10000000
 
 # Asset paths
 ASSET_PATHS = {
@@ -67,6 +67,7 @@ ASSET_PATHS = {
     "button": "assets\\ui\\button.png",
     "panel": "assets\\ui\\panel.png",
     "icons": "assets\\ui\\icons.png",
+    "door": "assets\\ui\\door.png",
     
     "blood": "assets\\effects\\blood.png",
     "spark": "assets\\effects\\spark.png",

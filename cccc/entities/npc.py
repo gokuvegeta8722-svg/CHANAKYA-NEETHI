@@ -33,6 +33,7 @@ class NPC(pygame.sprite.Sprite):
         self.rect = self.image.get_rect(topleft=(int(x), int(y)))
         
         self.dialogue_lines = dialogue_lines or [f"Hello! I'm {name}."]
+        self.dialogue = self.dialogue_lines
         self.talked_to = False
         
         print(f"[NPC] Created: {name} ({npc_id}) at ({int(x)}, {int(y)})")
@@ -41,6 +42,10 @@ class NPC(pygame.sprite.Sprite):
         """Start dialogue"""
         self.talked_to = True
         return self.dialogue_lines
+
+    def update(self, dt=0):
+        """Update NPC"""
+        self.rect.topleft = (int(self.x), int(self.y))
     
     def draw(self, screen, camera_offset):
         """Draw NPC"""

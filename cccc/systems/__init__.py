@@ -1,13 +1,15 @@
+"""Systems package"""
+
 from .camera import Camera
 from .dialogue import DialogueManager
-from .combat import CombatSystem
+from .inventory import Inventory
 from .collision import CollisionSystem
-from .inventory import InventorySystem
+from .combat import CombatSystem
 
 __all__ = [
     "Camera",
     "DialogueManager",
-    "CombatSystem",
+    "Inventory",
     "CollisionSystem",
-    "InventorySystem"
+    "CombatSystem",
 ]

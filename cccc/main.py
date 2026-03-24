@@ -1,5 +1,5 @@
 """
-Chanakya Neethi - Complete Game
+Chanakya Neethi - Main Game Entry Point (UPDATED WITH DOOR SYSTEM)
 """
 
 import pygame
@@ -18,7 +18,7 @@ from states.pause import PauseState
 
 
 class Game:
-    """Main game"""
+    """Main game with door/level transition system"""
     
     def __init__(self):
         """Initialize"""
@@ -64,7 +64,7 @@ class Game:
                     action = self.menu.handle_event(event)
                     if action == "start_game":
                         print("[GAME] Starting game...")
-                        self.game = GameState(self.assets)
+                        self.game = GameState(self.assets)  # Using updated GameState
                         self.state = GAME_STATE_GAME
                     elif action == "quit":
                         self.running = False
@@ -77,6 +77,10 @@ class Game:
                     elif event.key == pygame.K_SPACE:
                         if self.game and self.game.current_level:
                             self.game.current_level.handle_space()
+                    elif event.key == pygame.K_e:
+                        # E key for interaction (door or NPC)
+                        if self.game and self.game.current_level:
+                            self.game.current_level.handle_event(event)
                     else:
                         if self.game and self.game.current_level:
                             self.game.current_level.handle_event(event)

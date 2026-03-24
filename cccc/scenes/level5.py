@@ -1,12 +1,17 @@
 """Level 5"""
+
+import pygame
+
 from scenes.base_level import BaseLevel
-from entities import Player, Boss, Coin, MemoryShard
+from entities import Player, Boss, Coin
 from systems import Camera
 
 
 class Level5(BaseLevel):
     def __init__(self, assets):
         super().__init__(5, assets)
+
+        self.objective_complete = False
         self.setup()
     
     def setup(self):
@@ -28,13 +33,20 @@ class Level5(BaseLevel):
                 "attack_right": self.assets.load_image("player_attack_right", scale=(64, 64)),
             }
             
-            self.player = Player(self.level_width // 2, self.level_height // 2, player_sprites)
+            self.player = Player(
+                self.level_width // 2,
+                self.level_height // 2,
+                player_sprites
+            )
+
             self.camera = Camera(self.level_width, self.level_height)
             
-            # Boss
+            # FIX: boss sprite must be passed as a dict
             boss_sprite = self.assets.load_image("boss", scale=(96, 96))
-            boss = Boss("nanda", 600, 250, boss_sprite)
-            self.enemies.append(boss)
+            boss_sprites = {"boss": boss_sprite}
+
+            self.boss = Boss("nanda", 600, 250, boss_sprites)
+            self.enemies.append(self.boss)
             
             icon_sprite = self.assets.load_image("icons", scale=(32, 32))
             
@@ -44,7 +56,25 @@ class Level5(BaseLevel):
                 coin = Coin(x, y, icon_sprite)
                 self.items.append(coin)
             
-            print("[LEVEL 5] Ready!\n")
+            print("[LEVEL 5] Defeat the boss to win the game!\n")
+
         except Exception as e:
             print(f"[ERROR] Level 5 setup failed: {e}")
             raise
+
+    def update(self, dt):
+        super().update(dt)
+
+        if not self.objective_complete and len(self.enemies) == 0:
+            self.objective_complete = True
+            print("\n🎉 GAME COMPLETED! YOU DEFEATED NANDA! 🎉\n")
+            self.level_complete = True
+            self.next_level = None
+
+    def draw(self, screen):
+        super().draw(screen)
+
+        if self.objective_complete:
+            font = pygame.font.Font(None, 50)
+            text = font.render("YOU WIN!", True, (255, 215, 0))
+            screen.blit(text, (self.level_width // 2 - 100, 100))
