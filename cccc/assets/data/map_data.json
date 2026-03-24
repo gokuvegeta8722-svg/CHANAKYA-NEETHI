@@ -1,0 +1,74 @@
+{
+  "map_grid": {
+    "rows": 5,
+    "cols": 5,
+    "structure": [
+      ["Empty", "Village", "Empty", "Market", "Empty"],
+      ["Empty", "Road", "Road", "Road", "Empty"],
+      ["Empty", "Food_Storage", "Road", "Council_Hall", "Empty"],
+      ["Empty", "Road", "Road", "Road", "Empty"],
+      ["Empty", "Empty", "Empty", "Palace", "Empty"]
+    ]
+  },
+  "story_order": [
+    "Village",
+    "Council_Hall",
+    "Food_Storage",
+    "Market",
+    "Palace"
+  ],
+  "locations": {
+    "village": {
+      "name": "Poudanapura Village",
+      "level": 1,
+      "description": "A small village under military occupation",
+      "locked": false
+    },
+    "council_hall": {
+      "name": "Council Hall",
+      "level": 3,
+      "description": "Where the governing body meets",
+      "locked": true,
+      "unlock_requirement": "defeat_enemies"
+    },
+    "food_storage": {
+      "name": "Food Storage",
+      "level": 2,
+      "description": "Where supplies are kept",
+      "locked": false
+    },
+    "market": {
+      "name": "Trading Market",
+      "level": 2,
+      "description": "Where merchants gather",
+      "locked": false
+    },
+    "palace": {
+      "name": "Pataliputra Palace",
+      "level": 5,
+      "description": "The grand palace of King Nanda",
+      "locked": true,
+      "unlock_requirement": "defeat_all_bosses"
+    },
+    "varanasi": {
+      "name": "Varanasi Temple",
+      "level": 4,
+      "description": "An ancient sacred temple",
+      "locked": true,
+      "unlock_requirement": "map_pieces"
+    },
+    "bharukaccha": {
+      "name": "Bharukaccha Port",
+      "level": 2,
+      "description": "A busy trading port",
+      "locked": false
+    },
+    "vidisha": {
+      "name": "Vidisha Strategy Center",
+      "level": 3,
+      "description": "Where Chanakya teaches strategy",
+      "locked": true,
+      "unlock_requirement": "collect_coins"
+    }
+  }
+}

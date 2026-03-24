@@ -1,0 +1,148 @@
+{
+  "enemies": [
+    {
+      "id": "soldier",
+      "type": "soldier",
+      "name": "Soldier",
+      "description": "Basic military unit",
+      "health": 30,
+      "max_health": 30,
+      "damage": 10,
+      "speed": 120,
+      "attack_range": 50,
+      "attack_cooldown": 1.0,
+      "detection_range": 300,
+      "size": {
+        "width": 32,
+        "height": 32
+      },
+      "color": [200, 100, 100],
+      "experience_reward": 100,
+      "coin_reward": 10,
+      "sprite": "assets/images/enemies/soldier.png",
+      "levels": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": "archer",
+      "type": "archer",
+      "name": "Archer",
+      "description": "Ranged military unit",
+      "health": 25,
+      "max_health": 25,
+      "damage": 15,
+      "speed": 100,
+      "attack_range": 100,
+      "attack_cooldown": 1.5,
+      "detection_range": 400,
+      "size": {
+        "width": 32,
+        "height": 32
+      },
+      "color": [200, 150, 100],
+      "experience_reward": 150,
+      "coin_reward": 15,
+      "sprite": "assets/images/enemies/archer.png",
+      "levels": [2, 3, 4, 5]
+    },
+    {
+      "id": "guard",
+      "type": "guard",
+      "name": "Guard",
+      "description": "Heavy armored unit",
+      "health": 40,
+      "max_health": 40,
+      "damage": 12,
+      "speed": 130,
+      "attack_range": 60,
+      "attack_cooldown": 0.8,
+      "detection_range": 350,
+      "size": {
+        "width": 32,
+        "height": 32
+      },
+      "color": [180, 120, 100],
+      "experience_reward": 200,
+      "coin_reward": 20,
+      "sprite": "assets/images/enemies/guard.png",
+      "levels": [3, 4]
+    },
+    {
+      "id": "elite_guard",
+      "type": "elite_guard",
+      "name": "Elite Guard",
+      "description": "Highly trained warrior",
+      "health": 50,
+      "max_health": 50,
+      "damage": 18,
+      "speed": 140,
+      "attack_range": 70,
+      "attack_cooldown": 0.7,
+      "detection_range": 400,
+      "size": {
+        "width": 32,
+        "height": 32
+      },
+      "color": [160, 100, 100],
+      "experience_reward": 300,
+      "coin_reward": 30,
+      "sprite": "assets/images/enemies/elite_guard.png",
+      "levels": [5]
+    },
+    {
+      "id": "bhaddasala",
+      "type": "boss",
+      "name": "Bhaddasala",
+      "description": "Elephant Boss Guardian",
+      "health": 200,
+      "max_health": 200,
+      "damage": 30,
+      "speed": 100,
+      "attack_range": 80,
+      "attack_cooldown": 1.5,
+      "detection_range": 500,
+      "size": {
+        "width": 64,
+        "height": 80
+      },
+      "color": [200, 100, 50],
+      "experience_reward": 1000,
+      "coin_reward": 50,
+      "sprite": "assets/images/bosses/bhaddasala.png",
+      "levels": [4],
+      "phases": 3,
+      "special_attacks": [
+        "charge",
+        "stomp",
+        "trumpet"
+      ]
+    },
+    {
+      "id": "nanda",
+      "type": "final_boss",
+      "name": "King Nanda",
+      "description": "The Tyrant King",
+      "health": 300,
+      "max_health": 300,
+      "damage": 40,
+      "speed": 120,
+      "attack_range": 100,
+      "attack_cooldown": 1.2,
+      "detection_range": 600,
+      "size": {
+        "width": 64,
+        "height": 80
+      },
+      "color": [220, 50, 50],
+      "experience_reward": 2000,
+      "coin_reward": 100,
+      "sprite": "assets/images/bosses/nanda.png",
+      "levels": [5],
+      "phases": 3,
+      "special_attacks": [
+        "sword_slash",
+        "power_strike",
+        "royal_fury"
+      ]
+    }
+  ]
+}

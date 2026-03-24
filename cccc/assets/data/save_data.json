@@ -1,0 +1,144 @@
+{
+  "save_slots": [
+    {
+      "slot": 1,
+      "character_name": "Chandragupta",
+      "level": 1,
+      "health": 100,
+      "max_health": 100,
+      "coins": 0,
+      "experience": 0,
+      "playtime": 0,
+      "last_played": "2024-01-01T00:00:00Z",
+      "progress": {
+        "current_level": 1,
+        "levels_completed": 0,
+        "bosses_defeated": 0,
+        "enemies_killed": 0,
+        "items_collected": 0
+      },
+      "inventory": [],
+      "achievements": [],
+      "difficulty": "NORMAL"
+    },
+    {
+      "slot": 2,
+      "character_name": "Warrior",
+      "level": 3,
+      "health": 85,
+      "max_health": 100,
+      "coins": 500,
+      "experience": 2500,
+      "playtime": 3600,
+      "last_played": "2024-01-15T14:30:00Z",
+      "progress": {
+        "current_level": 3,
+        "levels_completed": 2,
+        "bosses_defeated": 1,
+        "enemies_killed": 45,
+        "items_collected": 28
+      },
+      "inventory": [
+        {
+          "item_id": "bow",
+          "quantity": 1
+        },
+        {
+          "item_id": "health_potion",
+          "quantity": 3
+        }
+      ],
+      "achievements": [
+        "first_kill",
+        "collect_100",
+        "boss_master"
+      ],
+      "difficulty": "HARD"
+    },
+    {
+      "slot": 3,
+      "character_name": "Explorer",
+      "level": 5,
+      "health": 120,
+      "max_health": 120,
+      "coins": 1200,
+      "experience": 8000,
+      "playtime": 18000,
+      "last_played": "2024-01-20T22:15:00Z",
+      "progress": {
+        "current_level": 5,
+        "levels_completed": 4,
+        "bosses_defeated": 2,
+        "enemies_killed": 120,
+        "items_collected": 95
+      },
+      "inventory": [
+        {
+          "item_id": "enchanted_sword",
+          "quantity": 1
+        },
+        {
+          "item_id": "bow",
+          "quantity": 1
+        },
+        {
+          "item_id": "health_potion",
+          "quantity": 5
+        },
+        {
+          "item_id": "sharp_blade",
+          "quantity": 2
+        }
+      ],
+      "achievements": [
+        "first_kill",
+        "collect_100",
+        "speed_run",
+        "boss_master"
+      ],
+      "difficulty": "NORMAL"
+    }
+  ],
+  "global_settings": {
+    "master_volume": 0.8,
+    "music_volume": 0.6,
+    "sfx_volume": 0.8,
+    "difficulty": "NORMAL",
+    "language": "en",
+    "graphics_quality": "high",
+    "show_hints": true,
+    "show_fps": false
+  },
+  "achievements": [
+    {
+      "id": "first_kill",
+      "name": "First Blood",
+      "description": "Defeat your first enemy",
+      "icon": "trophy_1"
+    },
+    {
+      "id": "collect_100",
+      "name": "Collector",
+      "description": "Collect 100 coins",
+      "icon": "trophy_2"
+    },
+    {
+      "id": "speed_run",
+      "name": "Speed Runner",
+      "description": "Complete level in under 2 minutes",
+      "icon": "trophy_3"
+    },
+    {
+      "id": "pacifist",
+      "name": "Pacifist",
+      "description": "Complete level without attacking",
+      "icon": "trophy_4"
+    },
+    {
+      "id": "boss_master",
+      "name": "Boss Master",
+      "description": "Defeat all bosses",
+      "icon": "trophy_5"
+    }
+  ]
+}

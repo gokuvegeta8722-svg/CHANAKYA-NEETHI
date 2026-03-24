@@ -1,0 +1,96 @@
+{
+  "dialogues": {
+    "elder_dialogue": {
+      "npc": "Village Elder",
+      "lines": [
+        "Welcome, brave warrior!",
+        "Soldiers patrol this village.",
+        "You must defeat them to proceed.",
+        "Use the SPACE key to attack!",
+        "Good luck, and may the gods guide you."
+      ]
+    },
+    "merchant_dialogue": {
+      "npc": "Merchant",
+      "lines": [
+        "Greetings, traveler!",
+        "I've heard rumors of a spy.",
+        "Collect coins and items.",
+        "They may help you on your quest.",
+        "Come back if you find anything valuable!"
+      ]
+    },
+    "spy_master_dialogue": {
+      "npc": "Spy Master",
+      "lines": [
+        "I have information you need.",
+        "The spy hides in the shadows.",
+        "First, prove your worth.",
+        "Defeat all enemies in this village!",
+        "Then we can discuss the next steps."
+      ]
+    },
+    "archer_master_dialogue": {
+      "npc": "Archer Master",
+      "lines": [
+        "I can teach you to use a bow.",
+        "It will take practice.",
+        "Archery is the art of precision.",
+        "With this bow, you can strike from afar.",
+        "Are you ready to learn?"
+      ]
+    },
+    "chanakya_dialogue": {
+      "npc": "Chanakya",
+      "lines": [
+        "Welcome, Chandragupta!",
+        "I have been expecting you.",
+        "Now we strategize together.",
+        "Choose your path wisely.",
+        "The fate of the kingdom rests with us.",
+        "Remember the four Upayas:",
+        "Sama - Diplomacy",
+        "Dana - Reward",
+        "Bheda - Strategy",
+        "Danda - Force"
+      ]
+    },
+    "boss_defeated": {
+      "npc": "System",
+      "lines": [
+        "Congratulations!",
+        "You have defeated the boss.",
+        "You are growing stronger.",
+        "Continue your journey."
+      ]
+    },
+    "level_complete": {
+      "npc": "System",
+      "lines": [
+        "Level Complete!",
+        "You have proven yourself worthy.",
+        "Press ENTER to continue to the next level."
+      ]
+    },
+    "ending_kill": {
+      "npc": "Narrator",
+      "lines": [
+        "You struck down King Nanda.",
+        "Revenge burns in your heart.",
+        "The kingdom is yours to rule.",
+        "Will you be a better king?",
+        "The story ends... or begins anew."
+      ]
+    },
+    "ending_spare": {
+      "npc": "Narrator",
+      "lines": [
+        "You spare King Nanda's life.",
+        "Mercy triumphs over vengeance.",
+        "He bows before your righteousness.",
+        "A new era of peace begins.",
+        "History remembers your compassion."
+      ]
+    }
+  }
+}

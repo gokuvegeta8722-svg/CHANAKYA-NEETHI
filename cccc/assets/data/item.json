@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "coin",
+      "name": "Coin",
+      "type": "currency",
+      "description": "Golden coin",
+      "value": 10,
+      "sprite": "assets/images/collectibles/coin.png",
+      "color": [255, 215, 0],
+      "size": 6,
+      "rarity": "common"
+    },
+    {
+      "id": "map_piece",
+      "name": "Map Piece",
+      "type": "quest",
+      "description": "Fragment of an ancient map",
+      "value": 50,
+      "sprite": "assets/images/collectibles/map_piece.png",
+      "color": [100, 200, 255],
+      "size": 10,
+      "rarity": "rare"
+    },
+    {
+      "id": "memory_shard",
+      "name": "Memory Shard",
+      "type": "quest",
+      "description": "A shard of forgotten memories",
+      "value": 25,
+      "sprite": "assets/images/collectibles/memory_shard.png",
+      "color": [200, 100, 255],
+      "size": 7,
+      "rarity": "rare"
+    },
+    {
+      "id": "treasure",
+      "name": "Treasure Chest",
+      "type": "collectible",
+      "description": "Ancient treasure",
+      "value": 100,
+      "sprite": "assets/images/collectibles/treasure.png",
+      "color": [139, 69, 19],
+      "size": 16,
+      "rarity": "epic"
+    },
+    {
+      "id": "health_potion",
+      "name": "Health Potion",
+      "type": "consumable",
+      "description": "Restores 50 HP",
+      "value": 0,
+      "heal_amount": 50,
+      "sprite": "assets/images/collectibles/potion.png",
+      "color": [255, 100, 100],
+      "size": 8,
+      "rarity": "uncommon"
+    },
+    {
+      "id": "bow",
+      "name": "Bow",
+      "type": "weapon",
+      "description": "Enables ranged attacks",
+      "value": 0,
+      "damage_bonus": 15,
+      "sprite": "assets/images/collectibles/bow.png",
+      "color": [200, 150, 100],
+      "size": 12,
+      "rarity": "rare"
+    },
+    {
+      "id": "sharp_blade",
+      "name": "Sharp Blade",
+      "type": "upgrade",
+      "description": "Increases attack damage by 5",
+      "value": 0,
+      "damage_bonus": 5,
+      "sprite": "assets/images/collectibles/blade.png",
+      "color": [200, 200, 200],
+      "rarity": "uncommon"
+    },
+    {
+      "id": "enchanted_sword",
+      "name": "Enchanted Sword",
+      "type": "weapon",
+      "description": "Magical sword +10 damage",
+      "value": 0,
+      "damage_bonus": 10,
+      "sprite": "assets/images/collectibles/sword.png",
+      "color": [150, 200, 255],
+      "rarity": "epic"
+    }
+  ]
+}

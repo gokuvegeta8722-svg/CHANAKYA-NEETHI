@@ -1,0 +1,80 @@
+{
+  "npcs": [
+    {
+      "id": "elder",
+      "name": "Village Elder",
+      "level": 1,
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "description": "Wise leader of the village",
+      "dialogue_id": "elder_dialogue",
+      "sprite": "assets/images/npcs/elder.png",
+      "color": [100, 150, 200],
+      "interact_range": 100,
+      "faction": "village"
+    },
+    {
+      "id": "merchant",
+      "name": "Merchant",
+      "level": 1,
+      "position": {
+        "x": 800,
+        "y": 700
+      },
+      "description": "Travels the kingdom seeking profit",
+      "dialogue_id": "merchant_dialogue",
+      "sprite": "assets/images/npcs/merchant.png",
+      "color": [100, 150, 200],
+      "interact_range": 100,
+      "faction": "neutral"
+    },
+    {
+      "id": "spy_master",
+      "name": "Spy Master",
+      "level": 1,
+      "position": {
+        "x": 1400,
+        "y": 300
+      },
+      "description": "Master of information networks",
+      "dialogue_id": "spy_master_dialogue",
+      "sprite": "assets/images/npcs/spy.png",
+      "color": [100, 150, 200],
+      "interact_range": 100,
+      "faction": "chanakya_forces"
+    },
+    {
+      "id": "archer_master",
+      "name": "Archer Master",
+      "level": 2,
+      "position": {
+        "x": 1000,
+        "y": 1000
+      },
+      "description": "Teaches the art of archery",
+      "dialogue_id": "archer_master_dialogue",
+      "sprite": "assets/images/npcs/archer_master.png",
+      "color": [100, 150, 200],
+      "interact_range": 100,
+      "faction": "chanakya_forces"
+    },
+    {
+      "id": "chanakya",
+      "name": "Chanakya",
+      "level": 3,
+      "position": {
+        "x": 600,
+        "y": 300
+      },
+      "description": "The great strategist and advisor",
+      "dialogue_id": "chanakya_dialogue",
+      "sprite": "assets/images/npcs/chanakya.png",
+      "color": [200, 150, 100],
+      "interact_range": 150,
+      "faction": "chanakya_forces",
+      "special": true
+    }
+  ]
+}

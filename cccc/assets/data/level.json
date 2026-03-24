@@ -1,0 +1,167 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "name": "Poudanapura",
+      "subtitle": "Village",
+      "description": "Exploration & Intelligence Gathering",
+      "act": 1,
+      "world_width": 2000,
+      "world_height": 1500,
+      "theme": "village",
+      "difficulty": 1,
+      "player_spawn": {
+        "x": 300,
+        "y": 750
+      },
+      "objectives": [
+        "Defeat all enemies",
+        "Collect 50 coins",
+        "Find the map piece"
+      ],
+      "rewards": {
+        "coins": 100,
+        "experience": 500
+      },
+      "background_color": [30, 60, 30],
+      "music": "assets/sounds/music/level1_theme.mp3",
+      "enemies_count": 6,
+      "npcs_count": 3,
+      "collectibles_count": 16,
+      "boss": null,
+      "story": "The village of Poudanapura is under military control. You must gather intelligence and defeat the soldiers."
+    },
+    {
+      "id": 2,
+      "name": "Bharukaccha",
+      "subtitle": "Trading Port",
+      "description": "Player Choice & Branching Path",
+      "act": 2,
+      "world_width": 2500,
+      "world_height": 1800,
+      "theme": "port",
+      "difficulty": 2,
+      "player_spawn": {
+        "x": 300,
+        "y": 900
+      },
+      "objectives": [
+        "Defeat enemies",
+        "Unlock bow weapon",
+        "Collect map piece"
+      ],
+      "rewards": {
+        "coins": 150,
+        "experience": 750
+      },
+      "background_color": [40, 50, 60],
+      "music": "assets/sounds/music/level2_theme.mp3",
+      "enemies_count": 4,
+      "npcs_count": 2,
+      "collectibles_count": 18,
+      "boss": null,
+      "story": "The trading port holds secrets. Merchants and spies gather here. You must navigate politics and combat."
+    },
+    {
+      "id": 3,
+      "name": "Vidisha",
+      "subtitle": "Strategy Center",
+      "description": "Strategy System & Army Composition",
+      "act": 3,
+      "world_width": 3000,
+      "world_height": 2000,
+      "theme": "temple",
+      "difficulty": 3,
+      "player_spawn": {
+        "x": 400,
+        "y": 1000
+      },
+      "objectives": [
+        "Learn strategy",
+        "Defeat guards",
+        "Master the art of war"
+      ],
+      "rewards": {
+        "coins": 200,
+        "experience": 1000
+      },
+      "background_color": [50, 40, 60],
+      "music": "assets/sounds/music/level3_theme.mp3",
+      "enemies_count": 5,
+      "npcs_count": 1,
+      "collectibles_count": 20,
+      "boss": null,
+      "story": "Chanakya teaches the art of strategy at Vidisha. Master the four Upayas to proceed."
+    },
+    {
+      "id": 4,
+      "name": "Varanasi",
+      "subtitle": "The Skill Test",
+      "description": "Skill Test & Pressure Gameplay",
+      "act": 4,
+      "world_width": 2800,
+      "world_height": 1900,
+      "theme": "arena",
+      "difficulty": 4,
+      "player_spawn": {
+        "x": 300,
+        "y": 950
+      },
+      "objectives": [
+        "Defeat all enemies",
+        "Challenge the boss",
+        "Prove your worth"
+      ],
+      "rewards": {
+        "coins": 300,
+        "experience": 1500
+      },
+      "background_color": [60, 40, 40],
+      "music": "assets/sounds/music/level4_theme.mp3",
+      "enemies_count": 3,
+      "npcs_count": 0,
+      "collectibles_count": 15,
+      "boss": {
+        "id": "bhaddasala",
+        "name": "Bhaddasala",
+        "type": "elephant_boss"
+      },
+      "story": "The great elephant guardian Bhaddasala blocks your path. Defeat it to prove your combat prowess."
+    },
+    {
+      "id": 5,
+      "name": "Pataliputra",
+      "subtitle": "Final Confrontation",
+      "description": "Final War & Moral Choice",
+      "act": 5,
+      "world_width": 3500,
+      "world_height": 2500,
+      "theme": "palace",
+      "difficulty": 5,
+      "player_spawn": {
+        "x": 300,
+        "y": 1250
+      },
+      "objectives": [
+        "Defeat elite guards",
+        "Challenge King Nanda",
+        "Make your choice"
+      ],
+      "rewards": {
+        "coins": 500,
+        "experience": 2000
+      },
+      "background_color": [80, 70, 90],
+      "music": "assets/sounds/music/level5_theme.mp3",
+      "enemies_count": 5,
+      "npcs_count": 0,
+      "collectibles_count": 18,
+      "boss": {
+        "id": "nanda",
+        "name": "King Nanda",
+        "type": "final_boss"
+      },
+      "story": "The final battle at Pataliputra Palace. King Nanda awaits. The choice you make will determine the fate of the kingdom."
+    }
+  ]
+}
